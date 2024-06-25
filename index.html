@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de Salário</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Calculadora de Salário</h1>
+    <p>Informe os dados abaixo:</p>
+    <label for="valorHora">Valor por hora trabalhada:</label>
+    <input type="number" id="valorHora" step="0.01">
+    <br><br>
+    <label for="horasTrabalhadas">Número de horas trabalhadas no mês:</label>
+    <input type="number" id="horasTrabalhadas">
+    <br><br>
+    <button id="calcularBtn">Calcular Salário</button>
+    <br><br>
+    <div id="resultado">
+        <p><strong>1. Salário Bruto:</strong> R$ <span id="salarioBruto"></span></p>
+        <p><strong>2. Desconto INSS (8%):</strong> R$ <span id="descontoINSS"></span></p>
+        <p><strong>3. Desconto Sindicato (5%):</strong> R$ <span id="descontoSindicato"></span></p>
+        <p><strong>4. Salário Líquido:</strong> R$ <span id="salarioLiquido"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
